@@ -2,20 +2,22 @@ import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 import routs from 'routs';
 
+import { StyledLink } from '../NavigationStyles';
+
 const AuthNav = ({ className, activeClassName }) => {
   return (
     <>
-      <NavLink
+      <StyledLink
         to={routs.signup}
         className={className}
-        activeClassName={activeClassName}
+        activeClassName='navLinkActive'
       >
         Зарегистрироваться
-      </NavLink>
+      </StyledLink>
       <NavLink
         to={routs.login}
         className={className}
-        activeClassName={activeClassName}
+        activeClassName='navLinkActive'
       >
         Войти
       </NavLink>

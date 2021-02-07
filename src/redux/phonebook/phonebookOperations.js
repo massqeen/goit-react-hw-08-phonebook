@@ -1,10 +1,5 @@
-// TODO
 import axios from 'axios';
-
 import { createAsyncThunk } from '@reduxjs/toolkit';
-
-// TODO
-// import { contactsAPI } from 'api';
 
 export const addContact = createAsyncThunk(
   'contacts/addContact',
