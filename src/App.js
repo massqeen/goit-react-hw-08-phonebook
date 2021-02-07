@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 
 import routs from 'routs';
+import HomeView from 'views/HomeView';
 
 import { getIsRefreshing } from 'redux/auth/authSelectors';
 import authOperations from 'redux/auth/authOperations';
@@ -10,7 +11,7 @@ import Navigation from 'components/Navigation';
 import PrivateRoute from 'components/PrivateRoute';
 import PublicRoute from 'components/PublicRoute';
 
-const HomeView = lazy(() => import('views/HomeView'));
+// const HomeView = lazy(() => import('views/HomeView'));
 const PhonebookView = lazy(() => import('views/PhonebookView'));
 const SignupView = lazy(() => import('views/SignupView'));
 const LoginView = lazy(() => import('views/LoginView'));
